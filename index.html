@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Hernán Nadotti</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            background-color: white;
+            color: black;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        header {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid black;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+        
+        .contact {
+            font-size: 12px;
+            font-weight: 300;
+        }
+        
+        .contact span {
+            margin-right: 15px;
+        }
+        
+        section {
+            margin-bottom: 35px;
+        }
+        
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .entry {
+            margin-bottom: 20px;
+        }
+        
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .entry-title {
+            font-weight: 700;
+            font-size: 14px;
+        }
+        
+        .entry-date {
+            font-weight: 300;
+            font-size: 12px;
+        }
+        
+        .entry-subtitle {
+            font-weight: 400;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        
+        .entry-description {
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-item {
+            font-size: 13px;
+            font-weight: 300;
+            padding: 5px 12px;
+            border: 1px solid black;
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        li {
+            font-size: 13px;
+            font-weight: 300;
+            margin-bottom: 5px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        li:before {
+            content: "·";
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+        }
+
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background-color: black;
+            color: white;
+            border: none;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .print-button:hover {
+            background-color: #333;
+        }
+
+        @media print {
+            body {
+                padding: 20px;
+            }
+            .print-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button" onclick="window.print()">Download PDF</button>
+
+    <header>
+        <h1>Hernán Nadotti</h1>
+        <div class="subtitle">Frontend Architect · AI Enthusiast</div>
+        <div class="contact">
+            <span>📧 hernan.nadotti@nybblegroup.com</span>
+            <span>🌐 hernannadotti.me</span>
+            <span>📍 Rosario, Santa Fe, Argentina</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Profile</h2>
+        <p class="entry-description">
+            Web developer and AI enthusiast passionate about creating clean, functional, and user-friendly websites and applications. With a focus on modern web technologies, I specialize in building responsive interfaces that provide exceptional user experiences across all devices. My approach to development emphasizes simplicity and performance, creating solutions that are both elegant and efficient. When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.
+        </p>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+        
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Frontend Developer</div>
+                <div class="entry-date">Nov 2022 – Present</div>
+            </div>
+            <div class="entry-subtitle">Nybble Group · Argentina</div>
+            <div class="entry-description">
+                Frontend Tech Lead | Independence Pet Group (IPG) 3+ Years
+            </div>
+            <ul>
+                <li>Engineered a high-performance frontend architecture from the ground up using Angular 18, utilizing advanced features such as Signals, Standalone Components, and Deferrable Views to ensure optimal reactivity and speed.</li>
+                <li>Designed reusable component that standardized the UI across multiple IPG brands</li>
+                <li>Directed the technical roadmap for customer-facing portals, focusing on accessibility (WCAG), performance optimization, and SEO.</li>
+            </ul>
+            <div class="entry-description">
+                Speaker Talks 
+            </div>
+            <ul>
+                <li>AI · MCP Servers</li>
+                <li>Angular RxJS</li>
+                <li>Dynamic Angular Forms</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Frontend Web Developer</div>
+                <div class="entry-date">Nov 2021 – Nov 2022</div>
+            </div>
+            <div class="entry-subtitle">Genium</div>
+            <div class="entry-description">
+                Development of web interfaces using agile methodologies and Figma. Implementation of software solutions focused on modern web application development.
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Frontend Developer</div>
+                <div class="entry-date">Sept 2019 – Feb 2022</div>
+            </div>
+            <div class="entry-subtitle">Mobomo · Washington, United States</div>
+            <div class="entry-description">
+                Development of web applications with agile methodologies, focused on software development and scalable web applications.
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Frontend Developer</div>
+                <div class="entry-date">Feb 2017 – Sept 2019</div>
+            </div>
+            <div class="entry-subtitle">OrderGroove · New York, United States</div>
+            <div class="entry-description">
+                Development of e-commerce solutions that includes subscriptions component to implement in client site.( Rivets.js, Angular.js, SaSS )
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Frontend Developer</div>
+                <div class="entry-date">Jan 2016 – Feb 2017</div>
+            </div>
+            <div class="entry-subtitle">Intouch Solutions · Kansas, United States</div>
+            <div class="entry-description">
+                Development of web applications for the pharmaceutical sector (Web Components, Html, Css, Webpack as a Module bundler)
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Frontend Web Developer</div>
+                <div class="entry-date">May 2013 – Dec 2015</div>
+            </div>
+            <div class="entry-subtitle">Donweb.com (by Dattatec) · Rosario, Santa Fe</div>
+            <div class="entry-description">
+                Development and maintenance of web platforms for hosting and domain services. (Knockout.js, Html, Css, Angular.js)
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Frontend Web Developer</div>
+                <div class="entry-date">May 2009 – May 2013</div>
+            </div>
+            <div class="entry-subtitle">Estudio Hormiga · Rosario, Santa Fe</div>
+            <div class="entry-description">
+                Website builder · Layout Designer (HTML - JQuery - Prototype - Css)
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Bachelor's Degree in Systems</div>
+                <div class="entry-date">2003 – 2007</div>
+            </div>
+            <div class="entry-subtitle">I.S.D.I · Computer Programming/Programmer, General</div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">Web Accessibility Training Course WCAG 2.1 & 2.2 Compliance</div>
+                <div class="entry-date">2025</div>
+            </div>
+            <div class="entry-subtitle">Udemy</div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div class="entry-title">HTML</div>
+                <div class="entry-date">2004</div>
+            </div>
+            <div class="entry-subtitle">Fagdut</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">React.js</div>
+            <div class="skill-item">Angular</div>
+            <div class="skill-item">Vue.js</div>
+            <div class="skill-item">Angular.js</div>
+            <div class="skill-item">Knockout.js</div>
+            <div class="skill-item">Ngrx (Redux Pattern on Angular)</div>
+            <div class="skill-item">RxJS</div>
+            <div class="skill-item">Node.js</div>
+            <div class="skill-item">Jasmine & Karma unit tests (AAA pattern)</div>
+            <div class="skill-item">Node.js</div>
+            <div class="skill-item">CSS and pre-processors</div>
+            <div class="skill-item">Sass</div>
+            <div class="skill-item">Less</div>
+            <div class="skill-item">Mobile-first CSS methodology</div>
+            <div class="skill-item">Bootstrap</div>
+            <div class="skill-item">Tailwind</div>
+            <div class="skill-item">Web Components</div>
+            <div class="skill-item">Adobe Photoshop (Multilayer Designs)</div>
+            <div class="skill-item">Git</div>
+            <div class="skill-item">Figma</div>
+            <div class="skill-item">Agile Methodologies</div>
+            <div class="skill-item">Responsive Web Development</div>
+            <div class="skill-item">Frontend Architecture</div>
+            <div class="skill-item">HTML/CSS</div>
+            <div class="skill-item">Web Accessibility (WCAG)</div>
+            <div class="skill-item">NPM</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Languages</h2>
+        <ul>
+            <li>Spanish — Native</li>
+            <li>English — Upper Intermediate</li>
+            <li>Portuguese — Advanced</li>
+            <li>Italian — Basic</li>
+        </ul>
+    </section>
+</body>
+</html>
