@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    color: black;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+header {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.contact {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.contact span {
+    margin-right: 15px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.entry {
+    margin-bottom: 20px;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.entry-title {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.entry-date {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.entry-subtitle {
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.entry-description {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    font-size: 13px;
+    font-weight: 300;
+    padding: 5px 12px;
+    border: 1px solid black;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    position: relative;
+}
+
+li:before {
+    content: "·";
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+}
+
+.print-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 24px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.print-button:hover {
+    background-color: #333;
+}
+
+@media print {
+    body {
+        padding: 20px;
+    }
+    .print-button {
+        display: none;
+    }
+}
