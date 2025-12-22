@@ -25,6 +25,25 @@
     box-sizing: border-box;
 }
 
+/* Reset semantic elements to behave like divs */
+article, header, main, time, address {
+    display: block;
+}
+
+address {
+    font-style: normal;
+}
+
+h3.entry-title,
+h3.entry-subtitle {
+    font-size: inherit;
+    margin: 0;
+}
+
+.skills-list {
+    list-style: none;
+}
+
 .flag {
     width: 21px;
     height: 13px;
@@ -117,6 +136,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 8px;
+    border: none;
 }
 
 .entry-title {
@@ -167,6 +187,10 @@ h2 {
     border-radius: 100px;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.skill-item:before {
+    content: none;
 }
 
 ul {
